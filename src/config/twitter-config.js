@@ -7,6 +7,5 @@ const client = new Twitter({
   access_token_secret: process.env.ACCESS_TOKEN_KEY_SECRETY
 });
 
-
   
 export default client
