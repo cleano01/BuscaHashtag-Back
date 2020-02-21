@@ -10,6 +10,8 @@ app.use(cors());
 
 app.use(router)
 
-app.listen(3000, () => {
-    console.log('Example app listening on port 3000!');
+var porta = process.env.PORT || 3000;
+
+app.listen(porta, () => {
+    console.log(`Example app listening on port ${porta}!`);
 })
