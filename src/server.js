@@ -7,7 +7,6 @@ let app = express();
 
 
 dotenv.config();
-//console.log(`Your port is ${process.env.CONSUMER_KEY}`); 
 
 app.use(bodyParser.json());
 

@@ -6,7 +6,6 @@ const hashtagRouter = express.Router();
 
 hashtagRouter.route('/buscar').post(  async (req, res)  =>{
   try {
-    console.log('////hashtagRouter////')
     let lista_hashtag = req.body;
     let tratado_hashtag = tratemento_hashtag(lista_hashtag);
     parameters.track=tratado_hashtag;
