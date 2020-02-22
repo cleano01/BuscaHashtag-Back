@@ -2,7 +2,12 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import router from './routes';
 import cors from 'cors'
+import dotenv from 'dotenv'
 let app = express();
+
+
+dotenv.config();
+//console.log(`Your port is ${process.env.CONSUMER_KEY}`); 
 
 app.use(bodyParser.json());
 
