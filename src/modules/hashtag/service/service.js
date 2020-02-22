@@ -7,8 +7,6 @@ export const parameters = {
 };
 
 export const tratemento_hashtag = (lista_hashtag) =>{
-  console.log('####### tratemento_hashtag #######')
-  console.log(lista_hashtag)
   try {
     let lista_hashtag_tratada='';
 
@@ -36,15 +34,11 @@ export const tratemento_hashtag = (lista_hashtag) =>{
 
 export const  stream = () => {
   
-  console.log('####### stream #######')
-  console.log(parameters)
   try {
     twitter_config.stream('statuses/filter', 
     parameters, (stream) => {
 
     stream.on('data', (tweet) =>{
-      console.log('$$$$$$$$$$$$$$$$$$$')
-      console.log(tweet)
       lista_tweets.push(tweet);
     });
 
