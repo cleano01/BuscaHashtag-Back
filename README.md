@@ -23,3 +23,9 @@
 * No diretório raiz execute o seguinte comando
 
       npm run start
+  
+#### Executando a teste da api
+-----------------
+* No diretório raiz execute o seguinte comando
+
+      npm test
