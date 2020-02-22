@@ -4,7 +4,7 @@
   "description": "Desafio Magrathea Labs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app/server.js --exec babel-node app/server.js",
+    "start": "nodemon src/server.js --exec babel-node src/server.js",
     "test": "./node_modules/.bin/mocha --require @babel/register"
   },
   "keywords": [
