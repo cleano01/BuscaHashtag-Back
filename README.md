@@ -18,3 +18,8 @@
         ACCESS_TOKEN_KEY: config.TWITTER_ACCESS_TOKEN_KEY,
         ACCESS_TOKEN_SECRET: config.TWITTER_ACCESS_TOKEN_SECRET
       
+#### Executando a API
+-----------------
+* No diretório raiz execute o seguinte comando
+
+      npm run start
