@@ -1,5 +1,18 @@
 # BuscaHashtag-Back
 
+#### Estrutura do projeto
+-----------------
+::
+
+    BuscaHashtag-Back
+    ├── src                     - estrutura do codigo fonte de end-points e serviços, e sub-modulos.
+    │   ├── modules             - sub-modulo do end-point procurar por app mais acessado com genero news.
+    │   ├──├── hashtag          - sub-modulo hashtag onde fica os end-ponits, servico da api.
+    │   ├──├──├── controllers   - sub-modulo controllers hashtag fica os end-points.
+    │   ├──├──├── service       - sub-modulo service camda de servico api do twitter.
+    ├── config                  - modulo de configuracao da api twitter, recebe as chaves de acesso.
+    ├── test                    - modulo de teste de unidade do serviço.
+
 #### Requerimentos
 -----------------
 * Versão do node.js:
