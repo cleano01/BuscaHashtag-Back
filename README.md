@@ -11,7 +11,7 @@
       NPM >= 6.13.7
       
  
-* Na pasta raiz do projeto mude a extensão do .env.exemplo para .evn e depois insira as credenciais:
+* Na pasta raiz do projeto mude a extensão do .env.exemplo para .env e depois insira as credenciais:
 
         CONSUMER_KEY: config.TWITTER_CONSUMER_KEY,
         CONSUMER_SECRET: config.TWITTER_CONSUMER_SECRET,
