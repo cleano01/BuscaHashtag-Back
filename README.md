@@ -24,7 +24,7 @@
 
       npm run start
   
-#### Executando a teste da api
+#### Executando os testes da api
 -----------------
 * No diretório raiz execute o seguinte comando:
 
