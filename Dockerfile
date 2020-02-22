@@ -1,6 +1,7 @@
 # Usa uma imagem do docker hub com a versão carbon do Node.js
 FROM node:carbon
 
+
 # Define qual diretório será usado para nossa aplicação dentro do container
 WORKDIR /usr/src/app
 
