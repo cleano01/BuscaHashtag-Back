@@ -38,7 +38,6 @@ export const tratemento_hashtag = (lista_hashtag) =>{
 
 export const  stream = () => {
   
-  console.log('aqui1')
   try {
     twitter_config.stream('statuses/filter', 
     parameters, (stream) => {

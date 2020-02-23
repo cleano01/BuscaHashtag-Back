@@ -8,7 +8,6 @@ hashtagRouter.route('/buscar').post(  async (req, res)  =>{
   try {
 
     let lista_hashtag = req.body;
-    console.log(lista_hashtag)
     let tratado_hashtag = tratemento_hashtag(lista_hashtag);
     parameters.track=tratado_hashtag;
   
