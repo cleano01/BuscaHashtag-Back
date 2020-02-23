@@ -1,7 +1,6 @@
 import twitter_config from '../../../config/twitter-config'
 
 export var lista_tweets = [];
-
 export const parameters = {
   track:'',        
 };
@@ -10,13 +9,18 @@ export const tratemento_hashtag = (lista_hashtag) =>{
   try {
     let lista_hashtag_tratada='';
 
-    lista_hashtag.map((elemento)=>{
+    let flitro = lista_hashtag.filter(function (elemento) {
+      return elemento != null;
+    });
+
+    flitro.map((elemento)=>{
     
-      if(elemento[0] != "#" && elemento != undefined){
+      if(elemento[0] != "#" && elemento != undefined && elemento != null){
         lista_hashtag_tratada += '#'+elemento+','
+
       }
 
-      else if(elemento != undefined){
+      else if(elemento != undefined && elemento != null){
         lista_hashtag_tratada += elemento+','
       }
     })
@@ -33,12 +37,14 @@ export const tratemento_hashtag = (lista_hashtag) =>{
 
 
 export const  stream = () => {
-  
+  lista_tweets;
+
   try {
     twitter_config.stream('statuses/filter', 
     parameters, (stream) => {
 
     stream.on('data', (tweet) =>{
+      console.log(tweet)
       lista_tweets.push(tweet);
     });
 
