@@ -37,21 +37,19 @@ export const tratemento_hashtag = (lista_hashtag) =>{
 
 
 export const  stream = () => {
-  lista_tweets;
-
+  
+  console.log('aqui1')
   try {
     twitter_config.stream('statuses/filter', 
     parameters, (stream) => {
 
     stream.on('data', (tweet) =>{
-      console.log(tweet)
       lista_tweets.push(tweet);
     });
 
     stream.on('error', (error) => {
       return (error)
     });
-
     setTimeout(stream.destroy, 10000)   
   })
   
@@ -62,3 +60,4 @@ export const  stream = () => {
   
 }
 
+lista_tweets = [];
